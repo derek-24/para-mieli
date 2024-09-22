@@ -25,15 +25,10 @@
         <div class="flowers">
             <div class="flower flower--1">
                 <div class="flower__leafs flower__leafs--1">
-                    <a href="https://open.spotify.com/intl-es/track/3cUxncrTWSA9lhlQbuIwUY?si=6e4c5bb96ff04876" target="_blank">
-                        <div class="flower__leaf flower__leaf--1"></div>
-                    </a>
-                    <a href="https://open.spotify.com/intl-es/track/0lBOxYabLsCS8Hg5ZRaz7p?si=df80fa31bd204bbf" target="_blank">
-                        <div class="flower__leaf flower__leaf--2"></div>
-                    </a>
-                    <a href="https://open.spotify.com/intl-es/track/5FX9FbeKFlQGEJbCYdQ7TI?si=bf23513d3a6e4733" target="_blank">
-                        <div class="flower__leaf flower__leaf--3"></div>
-                    </a>
+                    
+                    <div class="flower__leaf flower__leaf--1" onclick="openModal('imgs/eli/1.jpeg', '3cUxncrTWSA9lhlQbuIwUY')"></div>
+                    <div class="flower__leaf flower__leaf--2" onclick="openModal('imgs/eli/2.jpeg', '0lBOxYabLsCS8Hg5ZRaz7p')"></div>
+                    <div class="flower__leaf flower__leaf--3" onclick="openModal('imgs/eli/3.jpeg', '5FX9FbeKFlQGEJbCYdQ7TI')"></div>
                     <div class="flower__leaf flower__leaf--4"></div>
                     <div class="flower__white-circle"></div>
 
@@ -58,15 +53,9 @@
 
             <div class="flower flower--2">
                 <div class="flower__leafs flower__leafs--2">
-                    <a href="https://open.spotify.com/intl-es/track/3HMY0r2BAdpasXMY8rseR0?si=428228fdd9cf4eb2" target="_blank">
-                        <div class="flower__leaf flower__leaf--1"></div>
-                    </a>
-                    <a href="https://open.spotify.com/intl-es/track/1W0OCrMsRP1SLTEdw3JwEz?si=7a604607f8754569" target="_blank">
-                        <div class="flower__leaf flower__leaf--2"></div>
-                    </a>
-                    <a href="https://open.spotify.com/intl-es/track/5Vc7jkBAL54XmdP8AYR4c5?si=ec65a88db298449d" target="_blank">
-                        <div class="flower__leaf flower__leaf--3"></div>
-                    </a>
+                    <div class="flower__leaf flower__leaf--1" onclick="openModal('imgs/eli/4.jpeg', '2LBqCSwhJGcFQeTHMVGwy3')"></div>
+                    <div class="flower__leaf flower__leaf--2" onclick="openModal('imgs/eli/5.jpeg', '5Vc7jkBAL54XmdP8AYR4c5')"></div>
+                    <div class="flower__leaf flower__leaf--3" onclick="openModal('imgs/eli/6.jpeg', '3HMY0r2BAdpasXMY8rseR0')"></div>
                     <div class="flower__leaf flower__leaf--4"></div>
                     <div class="flower__white-circle"></div>
 
@@ -89,15 +78,9 @@
 
             <div class="flower flower--3">
                 <div class="flower__leafs flower__leafs--3">
-                    <a href="https://open.spotify.com/intl-es/track/5PgnsSH39VufdB418dDQWV?si=03297a11f6764a0f" target="_blank">
-                        <div class="flower__leaf flower__leaf--1"></div>
-                    </a>
-                    <a href="https://open.spotify.com/intl-es/track/2QUlMbvD9bL8wHqfsoqoet?si=b4cf6fb6c52b44c5" target="_blank">
-                        <div class="flower__leaf flower__leaf--2"></div>
-                    </a>
-                    <a href="https://open.spotify.com/intl-es/track/2LBqCSwhJGcFQeTHMVGwy3?si=73209798716442da" target="_blank">
-                        <div class="flower__leaf flower__leaf--3"></div>
-                    </a>
+                    <div class="flower__leaf flower__leaf--1" onclick="openModal('imgs/eli/7.jpeg', '5PgnsSH39VufdB418dDQWV')"></div>
+                    <div class="flower__leaf flower__leaf--2" onclick="openModal('imgs/eli/8.jpeg', '2QUlMbvD9bL8wHqfsoqoet')"></div>                
+                    <div class="flower__leaf flower__leaf--3" onclick="openModal('imgs/eli/9.jpeg', '1W0OCrMsRP1SLTEdw3JwEz')"></div>
                     <div class="flower__leaf flower__leaf--4"></div>
                     <div class="flower__white-circle"></div>
 
@@ -359,5 +342,33 @@
         </div>
 
         <p class="firma">Te ama poquito, Derek</p>
+
+        
+        
     </body>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        
+        <div class="modal-content">
+            <img  id="modal-image">
+
+
+            <iframe style="border-radius:12px" 
+                    id="modal-iframe"
+                    width="100%" 
+                    height="152" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    autoPlay="true"
+                    loading="lazy">
+            </iframe> 
+       
+        
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
 </html>

@@ -1645,3 +1645,82 @@ h1 {
       font-size: 2.5em;
   }
 }
+
+/**/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  transition: opacity 2.5s ease-in-out;
+
+   /* Flexbox para centrar el contenido */
+   
+   justify-content: center; /* Alineación horizontal */
+   align-items: center; /* Alineación vertical */
+}
+
+/* Mostrar modal con opacidad gradual */
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  height: 60vh;
+  max-width: 700px;
+  animation: scaleUp 0.5s ease-in-out;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  border-radius: 12px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Animación de escala para el modal */
+@keyframes scaleUp {
+  0% {
+      transform: scale(0.7);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.modal.closing {
+  animation: scaleDown 0.5s ease-in-out;
+}
+
+/* Animación inversa para cerrar el modal */
+@keyframes scaleDown {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(0.7);
+      opacity: 0;
+  }
+}
