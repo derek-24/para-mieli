@@ -5,7 +5,7 @@ function openModal(imageSrc, iframeSrc) {
     modal.classList.add("show");
 
     var modalImage = document.getElementById("modal-image");
-    modal.style.display = "block";
+    modal.style.display = "flex";
     modalImage.src = imageSrc;
 
     var modalIframe = document.getElementById("modal-iframe");
