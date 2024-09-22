@@ -1661,7 +1661,7 @@ h1 {
   height: 100vh;
   background-color: rgba(0,0,0,0.8);
   transition: opacity 2.5s ease-in-out;
-
+  overflow: auto;
    /* Flexbox para centrar el contenido */
    
    justify-content: center; /* Alineación horizontal */
